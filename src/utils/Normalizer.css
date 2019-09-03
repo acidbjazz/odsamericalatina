@@ -1,0 +1,109 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+svg {
+  width: 200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: var(--font-size--h1);
+  /* line-height: var(--font-size--h1); */
+}
+
+h2 {
+  font-size: var(--font-size--h2);
+  /* line-height: var(--font-size--h2); */
+}
+
+h3 {
+  font-size: var(--font-size--h3);
+  /* line-height: var(--font-size--h3); */
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ol,
+ul {
+  margin-bottom: 1rem;
+  list-style-position: inside;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  background-color: transparent; /* Remove the gray background on active links in IE 10. */
+  -webkit-text-decoration-skip: objects; /* Remove gaps in links underline in iOS 8+ and Safari 8+. */
+}
+
+img {
+  /* vertical-align: middle; */
+  border-style: none; /* Remove the border on images inside links in IE 10-. */
+  border: 0;
+}
+
+input,
+button,
+table,
+select {
+  border: 0;
+  outline: none;
+  appearance: none;
+  font: 400 var(--font-size) var(--font-sans-2);
+}
+
+input:focus,
+button:focus,
+table:focus,
+select:focus {
+  outline: none;
+}
+
+a,
+area,
+button,
+[role="button"],
+input:not([type="range"]),
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}

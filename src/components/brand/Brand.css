@@ -1,0 +1,17 @@
+.brand {
+  text-decoration: none;
+}
+
+.logo {
+}
+
+.iso {
+}
+
+/* responsive */
+
+@media (max-width: 1200px) {
+  /* .logo {
+    display: none;
+  } */
+}
