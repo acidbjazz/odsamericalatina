@@ -6,7 +6,7 @@ export default ({ data }) => {
   return <Home data={data.contentfulInicio} />
 }
 
-export const homeQuery = graphql`
+export const HomeQuery = graphql`
   query {
     contentfulInicio {
       videoPrincipal {

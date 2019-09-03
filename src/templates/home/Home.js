@@ -3,7 +3,6 @@ import Layout from "c/layout/Layout"
 import "./Home.css"
 
 export default ({ data }) => {
-  console.log(data.odss)
   return (
     <Layout type="page" className="home">
       <div className="hero">

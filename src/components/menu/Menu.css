@@ -1,3 +1,8 @@
+.nav-item {
+  margin: 2rem 2rem 2rem 0;
+  display: inline-block;
+}
+
 /* .home .menu-panel,
 .categoria .menu-panel {
   background: var(--color-gray);
