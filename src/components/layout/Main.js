@@ -3,6 +3,6 @@ import "./Main.css"
 
 export default ({ children }) => (
   <main className="main">
-    <div className="main-content">main :: {children}</div>
+    <div className="main-content">{children}</div>
   </main>
 )
