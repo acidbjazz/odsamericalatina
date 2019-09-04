@@ -38,10 +38,10 @@ export default () => {
           }
         >
           Noticias
-        </Link>
+        </Link> */}
         <Link to="/recursos/" className="nav-item" activeClassName="active">
           Recursos
-        </Link> */}
+        </Link>
       </nav>
     </div>
   )

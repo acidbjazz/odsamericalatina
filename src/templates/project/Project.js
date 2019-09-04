@@ -5,6 +5,7 @@ import "./Project.css"
 export default ({ data }) => {
   return (
     <Layout type="page" className="project">
+      <h1>El Proyecto</h1>
       <div
         className="about"
         dangerouslySetInnerHTML={{
@@ -19,6 +20,8 @@ export default ({ data }) => {
             </h2>
             <img src={item.icono.file.url} alt="x" />
             <div className="description">{item.descripcion.descripcion}</div>
+            <a href={item.url}>Ver más</a>
+            {item.videos ? <div>¡hay videos!</div> : null}
           </li>
         ))}
       </ul>
