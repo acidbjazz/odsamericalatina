@@ -1,10 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "c/layout/Layout"
 import "./Home.css"
+import Modal from "c/modal/Modal"
 
 export default ({ data }) => {
+  const [showModal, setShowModal] = useState(null)
+
+  const showVideo = video => {
+    console.log("miau", video)
+    // activateEpisode(API.episodes[i]);
+    setShowModal(video)
+  }
   return (
     <Layout type="page" className="home">
+      {showModal && <Modal video={showModal} />}
       <div className="hero">
         <video className="hero-video" preload="auto" autoPlay muted loop>
           <source src={data.videoLoop.file.url} type="video/mp4" />
@@ -39,7 +48,11 @@ export default ({ data }) => {
             </h2>
             <ul className="ods-videos">
               {item.videos.map((item, i) => (
-                <li className="ods-video" key={i}>
+                <li
+                  className="ods-video"
+                  onClick={() => showVideo(item.video.file.url)}
+                  key={i}
+                >
                   <picture className="ods-video-portada">
                     <img
                       className="ods-video-portada-img"
