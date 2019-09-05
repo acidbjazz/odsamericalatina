@@ -25,7 +25,10 @@ export default ({ data }) => {
           <h1 className="hero-title">
             ¿Aportan las industrias extractivas al desarrollo sostenible?
           </h1>
-          <button className="play">
+          <button
+            className="play"
+            onClick={() => showVideo(data.videoPrincipal.file.url)}
+          >
             <i className="material-icons">play_arrow</i>
           </button>
         </div>
