@@ -10,3 +10,20 @@
   height: 100%;
   object-fit: cover;
 }
+
+.modal-close {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0.15rem solid white;
+  width: 40px;
+  height: 40px;
+}
+
+.modal-close i {
+  font-size: 1.5rem;
+}

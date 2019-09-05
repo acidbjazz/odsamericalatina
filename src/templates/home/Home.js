@@ -7,13 +7,16 @@ export default ({ data }) => {
   const [showModal, setShowModal] = useState(null)
 
   const showVideo = video => {
-    console.log("miau", video)
-    // activateEpisode(API.episodes[i]);
     setShowModal(video)
   }
+
+  const closeVideo = () => {
+    setShowModal(null)
+  }
+
   return (
     <Layout type="page" className="home">
-      {showModal && <Modal video={showModal} />}
+      {showModal && <Modal video={showModal} closeVideo={closeVideo} />}
       <div className="hero">
         <video className="hero-video" preload="auto" autoPlay muted loop>
           <source src={data.videoLoop.file.url} type="video/mp4" />
