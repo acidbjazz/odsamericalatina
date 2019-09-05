@@ -9,11 +9,14 @@ export default ({ data }) => {
 export const HomeQuery = graphql`
   query {
     contentfulInicio {
+      videoLoop {
+        file {
+          url
+        }
+      }
       videoPrincipal {
-        video {
-          file {
-            url
-          }
+        file {
+          url
         }
       }
       odss {
