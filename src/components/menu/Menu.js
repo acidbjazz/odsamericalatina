@@ -27,7 +27,7 @@ export default () => {
         <Link to="/proyecto/" className="nav-item" activeClassName="active">
           El Proyecto
         </Link>
-        {/* <Link to="/mapa/" className="nav-item" activeClassName="active">
+        <Link to="/mapa/" className="nav-item" activeClassName="active">
           Mapa
         </Link>
         <Link
@@ -38,7 +38,7 @@ export default () => {
           }
         >
           Noticias
-        </Link> */}
+        </Link>
         <Link to="/recursos/" className="nav-item" activeClassName="active">
           Recursos
         </Link>

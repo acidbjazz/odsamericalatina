@@ -3,8 +3,6 @@ import Layout from "c/layout/Layout"
 import "./Resources.css"
 
 export default ({ data }) => {
-  console.log(data)
-
   return (
     <Layout type="page" className="resources">
       <h1>Recursos</h1>
