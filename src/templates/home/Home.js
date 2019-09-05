@@ -19,27 +19,39 @@ export default ({ data }) => {
         </div>
       </div>
       <div className="welcome">
-        ODS América Latina es un centro de recursos, análisis e información
-        acerca de la relación entre los impactos de las industrias extractivas y
-        los Objetivos de Desarrollo Sostenible. Buscamos contribuir a que
-        instituciones, empresas, comunidades y medios de comunicación debatan
-        sobre el aporte de las industrias extractivas para lograr la Agenda
-        2030. A continuación, presentamos videos con enfoques sobre los ODS Nº 5
-        “Igualdad de Género”, Nº 13 “Acción por el Clima”, Nº 9 “Industria,
-        innovación e infraestructura” y Nº 16 “Construcción de instituciones
-        democráticas”.
+        <div className="welcome-content">
+          ODS América Latina es un centro de recursos, análisis e información
+          acerca de la relación entre los impactos de las industrias extractivas
+          y los Objetivos de Desarrollo Sostenible. Buscamos contribuir a que
+          instituciones, empresas, comunidades y medios de comunicación debatan
+          sobre el aporte de las industrias extractivas para lograr la Agenda
+          2030. A continuación, presentamos videos con enfoques sobre los ODS Nº
+          5 “Igualdad de Género”, Nº 13 “Acción por el Clima”, Nº 9 “Industria,
+          innovación e infraestructura” y Nº 16 “Construcción de instituciones
+          democráticas”.
+        </div>
       </div>
       <ul className="odss">
         {data.odss.map((item, i) => (
-          <li key={i}>
-            <h2>
-              ODS #{item.contentfulid} :: {item.nombre}
+          <li className="ods" key={i}>
+            <h2 className="ods-title">
+              ODS {item.contentfulid}: {item.nombre}
             </h2>
             <ul className="ods-videos">
               {item.videos.map((item, i) => (
-                <li key={i}>
-                  <h3>{item.titulo}</h3>
-                  <img src={item.portada.file.url} alt="x" width="360" />
+                <li className="ods-video" key={i}>
+                  <picture className="ods-video-portada">
+                    <img
+                      className="ods-video-portada-img"
+                      src={item.portada.file.url}
+                      alt="x"
+                      width="360"
+                    />
+                    <button className="play ods-video-portada-play">
+                      <i className="material-icons">play_arrow</i>
+                    </button>
+                  </picture>
+                  <h3 className="ods-video-title">{item.titulo}</h3>
                   {/* <video className="sub" preload="auto" width="360" controls>
                     <source src={item.video.file.url} type="video/mp4" />
                   </video> */}

@@ -1,0 +1,15 @@
+.footer {
+  margin-top: 4rem;
+  width: 100%;
+  background: var(--color-gray);
+}
+
+.footer-content {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.copy {
+  font-size: var(--font-size--tiny);
+}
