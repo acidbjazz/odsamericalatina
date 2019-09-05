@@ -2,6 +2,8 @@
 }
 
 .page {
+  /* max-width: var(--page-width);
+  margin: 0 auto; */
 }
 
 .app {

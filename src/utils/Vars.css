@@ -1,19 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:500&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 :root {
   /* COLORS */
 
-  --color-gray: hsl(0, 0%, 75%);
-  --color-red: #ff3939;
-  --color-yellow: #ffc738;
-  --color-skyblue: #73b0d0;
-  --color-blue: #263248;
-  --color-green: #42c97e;
-  --color-purple: #a0146a;
-
-  --color-gray--light: #f9f9f9;
+  --color-gray: #ededed;
+  --color-skyblue: #009dda;
 
   --color-white--alpha: rgba(255, 255, 255, 0.25);
   --color-black--alpha: rgba(0, 0, 0, 0.3);
@@ -27,26 +21,26 @@
 
   /* MEASURES */
 
-  --page-width: 960px;
-  --article-width: 640px;
+  --page-width: 1200px;
   /* --page-columns: 4; */
   /* --column-width: 100% / var(--page-columns); */
   /* --border-radius: 4px; */
 
   /* FONTS */
 
-  --font-sans-1: "Quicksand", sans-serif;
-  --font-sans-2: "Open Sans", sans-serif;
+  --font-sans-1: "Oswald", sans-serif;
+  /* --font-sans-2: "Open Sans", sans-serif; */
+  --font-sans-2: "Roboto", sans-serif;
   --font-serif: serif;
   --font-mono: monospace;
 
   --font-family: var(--font-sans-2);
 
-  --font-size--menu: 18px;
-  --font-size--h1: 60px;
-  --font-size--h2: 36px;
-  --font-size--h3: 22px;
-  --font-size--paragraph: 18px;
+  --font-size--menu: 16px;
+  --font-size--h1: 24px;
+  --font-size--h2: 20px;
+  --font-size--h3: 16px;
+  --font-size--paragraph: 16px;
   --font-size--details: 14px;
   --font-size--tiny: 12px;
 
@@ -58,8 +52,9 @@
 
   /* Z-INDEX */
 
-  --z--menu: 1;
-  --z--modal: 2;
+  --z--header: 1;
+  --z--menu: 2;
+  --z--modal: 3;
 
   /* BREAKPOINTS */
 
@@ -96,6 +91,6 @@
 
 @media (max-width: 1800px) {
   :root {
-    --page-width: 800px;
+    /* --page-width: 800px; */
   }
 }

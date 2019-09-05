@@ -24,9 +24,9 @@ export default function GoogleMaps({ options, onMount, className }) {
   return <div {...props} style={{ height: `70vh` }} />
 }
 
-Map.defaultProps = {
+GoogleMaps.defaultProps = {
   options: {
-    center: { lat: 0, lng: 0 },
-    zoom: 8,
+    center: { lat: -5, lng: -83 },
+    zoom: 4,
   },
 }

@@ -1,0 +1,17 @@
+.header {
+  padding: 4rem;
+  width: 100%;
+}
+
+.home .header {
+  position: absolute;
+  z-index: var(--z--header);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--page-width);
+  margin: 0 auto;
+}
