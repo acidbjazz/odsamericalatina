@@ -1,7 +1,7 @@
 .home {
 }
 
-.hero {
+/* .hero {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -23,46 +23,24 @@
 .hero-title {
   font-size: 3vw;
   font-weight: bold;
-}
-
-.play {
-  color: black;
-  background: none;
-  width: 4rem;
-  height: 4rem;
-  border: 0.1rem solid black;
-  border-radius: 50%;
-  margin-bottom: 6rem;
-}
-
-.play:hover {
-  color: white;
-  border-color: white;
-  cursor: pointer;
-  background: var(--color-black--alpha);
-}
-
-.play i {
-  font-size: 3.5rem;
-}
+} */
 
 .welcome {
   max-width: var(--page-width);
-  margin: 4rem auto;
-}
-
-.welcome .welcome-content {
-  width: 75%;
-}
-
-.odss {
-  max-width: var(--page-width);
   margin: 0 auto;
-  list-style: none;
 }
 
-.ods-title {
-  font-family: var(--font-sans-1);
+.home .odss {
+  list-style: none;
+  /* background: red; */
+}
+
+.home .ods {
+  margin-bottom: 2rem;
+}
+
+.home .ods:last-child {
+  margin-bottom: 0;
 }
 
 .ods-videos {
@@ -71,13 +49,18 @@
   justify-content: space-between;
 }
 
+.ods-videos {
+  /* background: blue; */
+}
+
 .ods-video {
-  margin: 0 0.5rem;
+  margin: 0 1rem;
   cursor: pointer;
 }
 
-.ods-video:hover .play {
+.ods-video:hover .ods-video-cover-play {
   background: var(--color-black--alpha);
+  transform: scale(1.1);
 }
 
 .ods-video:first-child {
@@ -88,23 +71,36 @@
   margin-right: 0;
 }
 
-.ods-video-portada {
+.ods-video-cover {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.ods-video-portada-img {
+.ods-video-cover-img {
   width: 100%;
 }
 
-.ods-video-portada-play {
-  color: white;
-  border: 0.1rem solid white;
+.ods-video-cover-play {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  border: 0.1rem solid white;
+  transition: all var(--t-s) var(--easeOutExpo);
+}
+
+.ods-video-cover-play i {
+  font-size: 3rem;
 }
 
 .ods-video-title {
-  margin-top: 0.8rem;
+  margin: 0;
 }

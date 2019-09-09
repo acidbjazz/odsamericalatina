@@ -16,7 +16,7 @@
   --color-blue--alpha: rgba(0, 0, 255, 0.25);
   --color-yellow--alpha: rgba(255, 255, 0, 0.25);
 
-  --color-text: black;
+  --color-text: #4d4d4d;
   --color-background: white;
 
   /* MEASURES */
@@ -29,17 +29,16 @@
   /* FONTS */
 
   --font-sans-1: "Oswald", sans-serif;
-  /* --font-sans-2: "Open Sans", sans-serif; */
   --font-sans-2: "Roboto", sans-serif;
   --font-serif: serif;
   --font-mono: monospace;
 
   --font-family: var(--font-sans-2);
 
-  --font-size--menu: 16px;
+  --font-size--menu: 18px;
   --font-size--h1: 24px;
-  --font-size--h2: 20px;
-  --font-size--h3: 16px;
+  --font-size--h2: 22px;
+  --font-size--h3: 20px;
   --font-size--paragraph: 16px;
   --font-size--details: 14px;
   --font-size--tiny: 12px;

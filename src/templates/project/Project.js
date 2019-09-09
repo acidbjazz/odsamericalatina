@@ -5,26 +5,30 @@ import "./Project.css"
 export default ({ data }) => {
   return (
     <Layout type="page" className="project">
-      <h1>El Proyecto</h1>
+      <h1>EL PROYECTO</h1>
       <div
         className="about"
         dangerouslySetInnerHTML={{
           __html: data.texto.childMarkdownRemark.html,
         }}
       />
-      <ul className="odss">
+      <div className="odss">
         {data.odss.map((item, i) => (
-          <li key={i}>
-            <h2>
-              ODS #{item.contentfulid} :: {item.nombre}
-            </h2>
-            <img src={item.icono.file.url} alt="x" />
-            <div className="description">{item.descripcion.descripcion}</div>
-            <a href={item.url}>Ver más</a>
-            {item.videos ? <div>¡hay videos!</div> : null}
-          </li>
+          <div className="ods" key={i}>
+            <img className="ods-icon" src={item.icono.file.url} alt="icon" />
+            <h3>
+              ODS {item.contentfulid}: {item.nombre}
+            </h3>
+            <div className="ods-description">
+              {item.descripcion.descripcion}
+            </div>
+            <a className="ods-link" href={item.url}>
+              Ver más
+            </a>
+            {/* {item.videos ? <div>¡hay videos!</div> : null} */}
+          </div>
         ))}
-      </ul>
+      </div>
     </Layout>
   )
 }

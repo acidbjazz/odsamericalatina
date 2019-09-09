@@ -1,28 +1,29 @@
-.resources-topics {
+.news-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
 }
 
-.resource {
+.news-item {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.news-item-cover {
+  width: 100%;
+}
+
+.news-item-date {
   margin-bottom: 1rem;
-}
-
-.resource-title {
-  margin-bottom: 0.5rem;
-}
-
-.resource-format {
-  margin-bottom: 0.5rem;
   font-size: var(--font-size--details);
 }
 
-.resource-abstract {
+.news-item-excerpt {
   margin-bottom: 1rem;
 }
 
-.resource-link {
-  text-decoration: none;
+.news-item-link {
+  display: inline-block;
   color: black;
   background: var(--color-gray);
   padding: 0.2rem 0.4rem;

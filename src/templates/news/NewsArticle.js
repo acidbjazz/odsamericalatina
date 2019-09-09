@@ -1,17 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "c/layout/Layout"
+import "./NewsArticle.css"
 
-export default ({ data, pageContext }) => {
+export default ({ data }) => {
   const dataList = data.contentfulNoticias
   return (
-    <Layout type="page" className="news">
-      <h1>Noticias</h1>
+    <Layout type="page" className="news-article">
+      <h1>NOTICIAS</h1>
       <h2 className="title">{dataList.titulo}</h2>
-      <div className="item-date">{dataList.fecha}</div>
-      <img src={dataList.portada.file.url} alt="x" />
-      <main
-        className="article-main"
+      <div className="news-article-date">{dataList.fecha}</div>
+      <img
+        className="news-article-cover"
+        src={dataList.portada.file.url}
+        alt="x"
+      />
+      <div
+        className="news-article-text"
         dangerouslySetInnerHTML={{
           __html: dataList.texto.childMarkdownRemark.html,
         }}

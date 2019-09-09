@@ -1,3 +1,17 @@
+/* this projects: odsamericalatina */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans-1);
+  color: black;
+}
+
+/* all projects */
+
 *,
 *:before,
 *:after {
@@ -37,17 +51,14 @@ h6 {
 
 h1 {
   font-size: var(--font-size--h1);
-  /* line-height: var(--font-size--h1); */
 }
 
 h2 {
   font-size: var(--font-size--h2);
-  /* line-height: var(--font-size--h2); */
 }
 
 h3 {
   font-size: var(--font-size--h3);
-  /* line-height: var(--font-size--h3); */
 }
 
 p {

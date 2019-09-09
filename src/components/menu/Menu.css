@@ -5,8 +5,16 @@
 
 .nav-item {
   text-decoration: none;
+  font-size: var(--font-size--menu);
   color: black;
-  padding: 0.2rem 0.5rem;
+  padding: 0.1rem 0.4rem;
+  transition: all var(--t-s) var(--easeOutExpo);
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.nav-item:first-child {
+  margin-left: 0;
 }
 
 .nav-item:last-child {

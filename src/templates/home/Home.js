@@ -17,7 +17,7 @@ export default ({ data }) => {
   return (
     <Layout type="page" className="home">
       {showModal && <Modal video={showModal} closeVideo={closeVideo} />}
-      <div className="hero">
+      {/* <div className="hero">
         <video className="hero-video" preload="auto" autoPlay muted loop>
           <source src={data.videoLoop.file.url} type="video/mp4" />
         </video>
@@ -26,60 +26,60 @@ export default ({ data }) => {
             ¿Aportan las industrias extractivas al desarrollo sostenible?
           </h1>
           <button
-            className="play"
+            className="call"
             onClick={() => showVideo(data.videoPrincipal.file.url)}
           >
-            <i className="material-icons">play_arrow</i>
+            call to action
           </button>
         </div>
-      </div>
+      </div> */}
       <div className="welcome">
-        <div className="welcome-content">
+        <p>
           ODS América Latina es un centro de recursos, análisis e información
           acerca de la relación entre los impactos de las industrias extractivas
           y los Objetivos de Desarrollo Sostenible. Buscamos contribuir a que
           instituciones, empresas, comunidades y medios de comunicación debatan
           sobre el aporte de las industrias extractivas para lograr la Agenda
-          2030. A continuación, presentamos videos con enfoques sobre los ODS Nº
-          5 “Igualdad de Género”, Nº 13 “Acción por el Clima”, Nº 9 “Industria,
+          2030.
+        </p>
+        <p>
+          A continuación, presentamos videos con enfoques sobre los ODS Nº 5
+          “Igualdad de Género”, Nº 13 “Acción por el Clima”, Nº 9 “Industria,
           innovación e infraestructura” y Nº 16 “Construcción de instituciones
           democráticas”.
-        </div>
+        </p>
       </div>
-      <ul className="odss">
+      <div className="odss">
         {data.odss.map((item, i) => (
-          <li className="ods" key={i}>
+          <div className="ods" key={i}>
             <h2 className="ods-title">
               ODS {item.contentfulid}: {item.nombre}
             </h2>
-            <ul className="ods-videos">
+            <div className="ods-videos">
               {item.videos.map((item, i) => (
-                <li
+                <div
                   className="ods-video"
                   onClick={() => showVideo(item.video.file.url)}
                   key={i}
                 >
-                  <picture className="ods-video-portada">
+                  <picture className="ods-video-cover">
                     <img
-                      className="ods-video-portada-img"
+                      className="ods-video-cover-img"
                       src={item.portada.file.url}
-                      alt="x"
+                      alt="cover"
                       width="360"
                     />
-                    <button className="play ods-video-portada-play">
+                    <button className="ods-video-cover-play">
                       <i className="material-icons">play_arrow</i>
                     </button>
                   </picture>
                   <h3 className="ods-video-title">{item.titulo}</h3>
-                  {/* <video className="sub" preload="auto" width="360" controls>
-                    <source src={item.video.file.url} type="video/mp4" />
-                  </video> */}
-                </li>
+                </div>
               ))}
-            </ul>
-          </li>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </Layout>
   )
 }

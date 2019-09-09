@@ -1,17 +1,19 @@
 .header {
-  padding: 4rem;
   width: 100%;
+  /* background: red; */
 }
 
-.home .header {
+/* .home .header {
   position: absolute;
   z-index: var(--z--header);
-}
+} */
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background: blue; */
   max-width: var(--page-width);
   margin: 0 auto;
+  padding: 2rem;
 }

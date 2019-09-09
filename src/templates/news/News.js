@@ -1,24 +1,30 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "c/layout/Layout"
+import "./News.css"
 
-export default ({ data, pageContext }) => {
+export default ({ data }) => {
   const dataList = data.allContentfulNoticias.nodes
   return (
     <Layout type="page" className="news">
-      <h1>Noticias</h1>
-      <ul>
+      <h1>NOTICIAS</h1>
+      <div className="news-list">
         {dataList.map((item, i) => (
           <Link key={i} className="news-item" to={`/noticias/${item.slug}`}>
-            <h2 className="title">{item.titulo}</h2>
-            <div className="item-date">{item.fecha}</div>
-            <img src={item.portada.file.url} alt="x" />
-            <div className="item-excerpt">
+            <img
+              className="news-item-cover"
+              src={item.portada.file.url}
+              alt="x"
+            />
+            <h2 className="news-item-title">{item.titulo}</h2>
+            <div className="news-item-date">{item.fecha}</div>
+            <div className="news-item-excerpt">
               {item.texto.childMarkdownRemark.excerpt}
             </div>
+            <div className="news-item-link">Leer noticia</div>
           </Link>
         ))}
-      </ul>
+      </div>
     </Layout>
   )
 }

@@ -1,2 +1,29 @@
-.home {
+.about {
+  margin-bottom: 2rem;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+.project .odss {
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.ods-icon {
+  width: 100%;
+}
+
+.ods-description {
+  margin-bottom: 1rem;
+}
+
+.ods-link {
+  text-decoration: none;
+  color: black;
+  background: var(--color-gray);
+  padding: 0.2rem 0.4rem;
 }
