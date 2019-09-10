@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans"); */
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald:500&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
@@ -30,8 +30,8 @@
 
   --font-sans-1: "Oswald", sans-serif;
   --font-sans-2: "Roboto", sans-serif;
-  --font-serif: serif;
-  --font-mono: monospace;
+  /* --font-serif: serif;
+  --font-mono: monospace; */
 
   --font-family: var(--font-sans-2);
 

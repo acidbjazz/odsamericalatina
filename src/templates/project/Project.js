@@ -16,14 +16,14 @@ export default ({ data }) => {
         {data.odss.map((item, i) => (
           <div className="ods" key={i}>
             <img className="ods-icon" src={item.icono.file.url} alt="icon" />
-            <h3>
+            <h3 className="ods-title">
               ODS {item.contentfulid}: {item.nombre}
             </h3>
             <div className="ods-description">
               {item.descripcion.descripcion}
             </div>
-            <a className="ods-link" href={item.url}>
-              Ver más
+            <a className="go" href={item.url}>
+              Link text
             </a>
             {/* {item.videos ? <div>¡hay videos!</div> : null} */}
           </div>

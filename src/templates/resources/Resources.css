@@ -1,3 +1,11 @@
+.resources-country {
+  margin-bottom: 2rem;
+}
+
+.resources-country:last-child {
+  margin-bottom: 0;
+}
+
 .resources-topics {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -8,6 +16,10 @@
   margin-bottom: 1rem;
   border: 1px solid var(--color-gray);
   padding: 1rem;
+}
+
+.resource:last-child {
+  margin-bottom: 0;
 }
 
 .resource-title {
@@ -29,9 +41,4 @@
   color: black;
   background: var(--color-gray);
   padding: 0.2rem 0.4rem;
-}
-
-.go {
-  color: var(--color-skyblue);
-  font-size: var(--font-size--details);
 }

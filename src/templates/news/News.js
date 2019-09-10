@@ -16,12 +16,12 @@ export default ({ data }) => {
               src={item.portada.file.url}
               alt="x"
             />
-            <h2 className="news-item-title">{item.titulo}</h2>
+            <h3 className="news-item-title">{item.titulo}</h3>
             <div className="news-item-date">{item.fecha}</div>
             <div className="news-item-excerpt">
               {item.texto.childMarkdownRemark.excerpt}
             </div>
-            <div className="news-item-link">Leer noticia</div>
+            <div className="go">Link text</div>
           </Link>
         ))}
       </div>

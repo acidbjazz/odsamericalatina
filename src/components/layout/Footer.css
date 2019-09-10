@@ -1,14 +1,12 @@
 .footer {
   width: 100%;
   background: var(--color-gray);
-  /* background: red; */
 }
 
 .footer-content {
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: 2rem;
-  /* background: blue; */
+  padding: 4rem 2rem;
 }
 
 .copy {

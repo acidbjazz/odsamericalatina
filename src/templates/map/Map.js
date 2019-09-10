@@ -1,30 +1,39 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "c/layout/Layout"
-// import GoogleMaps from "c/GoogleMaps"
 import Leaflet from "c/Leaflet"
 import "./Map.css"
 
 export default ({ data }) => {
-  // const [state, setState] = useState(false)
+  const [countryData, setCountryData] = useState(null)
+  const showCountryData = data => {
+    setCountryData(data)
+  }
   return (
-    <Layout type="page" className="map">
-      <Leaflet className="map-leaflet" center={[-5, -83]} zoom={4} />
-      <ul className="list">
-        {data.nodes.map((item, i) => (
-          <li key={i}>
-            <h2>{item.pais}</h2>
-            <div>
-              coordenadas: {item.coordenadas.lat},{item.coordenadas.lon}
-            </div>
-            <main
-              className="article-main"
-              dangerouslySetInnerHTML={{
-                __html: item.texto.childMarkdownRemark.html,
-              }}
-            />
-          </li>
-        ))}
-      </ul>
+    <Layout type="app" className="map">
+      <Leaflet
+        className="map-leaflet"
+        data={data.nodes}
+        showCountryData={showCountryData}
+        center={[5, -50]}
+        zoom={4}
+        zoomControl={false}
+        minZoom={3}
+        maxZoom={5}
+      />
+      {countryData ? (
+        <div className="map-data">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: countryData,
+            }}
+          />
+        </div>
+      ) : (
+        <div className="map-data wait">
+          Texto inicial: indicaciones de uso y/o de que va la sección, que datos
+          se pueden obtener aquí
+        </div>
+      )}
     </Layout>
   )
 }

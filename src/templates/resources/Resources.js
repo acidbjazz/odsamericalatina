@@ -9,9 +9,7 @@ export default ({ data }) => {
       objectsByKeyValue[value] = (objectsByKeyValue[value] || []).concat(obj)
       return objectsByKeyValue
     }, {})
-
   const groupByTematica = groupBy("tematica")
-
   return (
     <Layout type="page" className="resources">
       <h1>RECURSOS</h1>
@@ -37,7 +35,6 @@ export default ({ data }) => {
                     ))
                   : null}
               </div>
-
               <div>
                 <h3>Institucionalidad</h3>
                 {groupByTematica(item.nodes)["Instituciones"]
@@ -57,7 +54,6 @@ export default ({ data }) => {
                     )
                   : null}
               </div>
-
               <div>
                 <h3>Territorio</h3>
                 {groupByTematica(item.nodes)["Territorio"]

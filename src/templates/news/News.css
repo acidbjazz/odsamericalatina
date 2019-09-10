@@ -13,18 +13,16 @@
   width: 100%;
 }
 
+.news-item-title {
+  margin-bottom: 0.5rem;
+}
+
 .news-item-date {
-  margin-bottom: 1rem;
-  font-size: var(--font-size--details);
+  margin-bottom: 0.5rem;
+  font-size: var(--font-size--tiny);
 }
 
 .news-item-excerpt {
   margin-bottom: 1rem;
-}
-
-.news-item-link {
-  display: inline-block;
-  color: black;
-  background: var(--color-gray);
-  padding: 0.2rem 0.4rem;
+  font-size: var(--font-size--details);
 }

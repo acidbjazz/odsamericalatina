@@ -1,43 +1,47 @@
-// import React, { Component } from "react"
-// import { Map, Marker, Popup, TileLayer } from "react-leaflet"
-
-// export default class MyMap extends Component {
-//   render() {
-//     // const { options } = this.props
-//     const position = [-5, -83]
-//     if (typeof window !== "undefined") {
-//       return (
-//         <Map className="xyz" center={position} zoom={5}>
-//           <TileLayer
-//             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-//             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-//           />
-//           <Marker position={position}>
-//             <Popup>
-//               A pretty CSS3 popup.
-//               <br />
-//               Easily customizable.
-//             </Popup>
-//           </Marker>
-//         </Map>
-//       )
-//     }
-//     return null
-//   }
-// }
-
 import React from "react"
-import { Map, TileLayer, Marker, Popup } from "react-leaflet"
+import { Map, TileLayer, Marker, GeoJSON } from "react-leaflet"
+import americaGeoJSON from "t/map/map.geo.json"
+// import Modal from "c/modal/Modal"
 
-export default ({ className, center, zoom }) => {
+export default ({
+  className,
+  data,
+  showCountryData,
+  center,
+  zoom,
+  zoomControl,
+  minZoom,
+  maxZoom,
+}) => {
   return typeof window !== "undefined" ? (
-    <Map className={className} center={center} zoom={zoom}>
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Marker position={center}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
-      </Marker>
+    <Map
+      className={className}
+      data={data}
+      center={center}
+      zoom={zoom}
+      zoomControl={zoomControl}
+      minZoom={minZoom}
+      maxZoom={maxZoom}
+    >
+      <GeoJSON
+        data={americaGeoJSON}
+        style={() => ({
+          color: "#4d4d4d",
+          weight: 1,
+          opacity: 0.5,
+          fillColor: "#ededed",
+          dashArray: 3,
+          fillOpacity: 0.5,
+        })}
+      />
+
+      {data.map((item, i) => (
+        <Marker
+          key={i}
+          position={[item.coordenadas.lat, item.coordenadas.lon]}
+          onClick={() => showCountryData(item.texto.childMarkdownRemark.html)}
+        />
+      ))}
     </Map>
   ) : null
 }

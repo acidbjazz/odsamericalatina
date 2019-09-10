@@ -17,7 +17,7 @@ export default ({ data }) => {
   return (
     <Layout type="page" className="home">
       {showModal && <Modal video={showModal} closeVideo={closeVideo} />}
-      {/* <div className="hero">
+      <div className="hero">
         <video className="hero-video" preload="auto" autoPlay muted loop>
           <source src={data.videoLoop.file.url} type="video/mp4" />
         </video>
@@ -26,13 +26,14 @@ export default ({ data }) => {
             ¿Aportan las industrias extractivas al desarrollo sostenible?
           </h1>
           <button
-            className="call"
+            className="hero-call"
             onClick={() => showVideo(data.videoPrincipal.file.url)}
           >
-            call to action
+            <i className="material-icons">play_arrow</i>
+            <span>Sobre los objetivos de desarrollo sostenible (ODS)</span>
           </button>
         </div>
-      </div> */}
+      </div>
       <div className="welcome">
         <p>
           ODS América Latina es un centro de recursos, análisis e información

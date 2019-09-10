@@ -8,7 +8,7 @@ export default ({ data }) => {
   return (
     <Layout type="page" className="news-article">
       <h1>NOTICIAS</h1>
-      <h2 className="title">{dataList.titulo}</h2>
+      <h2 className="news-article-title">{dataList.titulo}</h2>
       <div className="news-article-date">{dataList.fecha}</div>
       <img
         className="news-article-cover"
