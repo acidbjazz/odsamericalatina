@@ -21,6 +21,14 @@
   z-index: 40;
 }
 
+.leaflet-container {
+  background: white;
+}
+
+.map-leaflet.leaflet-container {
+  background: white;
+}
+
 .map-data {
   background: white;
   position: absolute;

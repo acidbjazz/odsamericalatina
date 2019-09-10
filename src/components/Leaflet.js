@@ -1,7 +1,6 @@
 import React from "react"
 import { Map, TileLayer, Marker, GeoJSON } from "react-leaflet"
 import americaGeoJSON from "t/map/map.geo.json"
-// import Modal from "c/modal/Modal"
 
 export default ({
   className,
