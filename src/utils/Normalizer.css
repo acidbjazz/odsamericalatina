@@ -1,6 +1,10 @@
 /* this projects: odsamericalatina */
 
-h1,
+h1 {
+  font-family: var(--font-sans-1);
+  color: var(--color-skyblue);
+}
+
 h2,
 h3,
 h4,

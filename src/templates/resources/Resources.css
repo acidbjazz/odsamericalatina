@@ -1,11 +1,13 @@
 .resources-topics {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .resource {
   margin-bottom: 1rem;
+  border: 1px solid var(--color-gray);
+  padding: 1rem;
 }
 
 .resource-title {
@@ -14,11 +16,12 @@
 
 .resource-format {
   margin-bottom: 0.5rem;
-  font-size: var(--font-size--details);
+  font-size: var(--font-size--tiny);
 }
 
 .resource-abstract {
   margin-bottom: 1rem;
+  font-size: var(--font-size--details);
 }
 
 .resource-link {
@@ -26,4 +29,9 @@
   color: black;
   background: var(--color-gray);
   padding: 0.2rem 0.4rem;
+}
+
+.go {
+  color: var(--color-skyblue);
+  font-size: var(--font-size--details);
 }

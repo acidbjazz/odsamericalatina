@@ -10,16 +10,19 @@
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-offline": "^2.2.7",
     "gatsby-plugin-react-helmet": "^3.1.4",
+    "gatsby-plugin-react-leaflet": "^2.0.11",
     "gatsby-plugin-react-svg": "^2.1.2",
     "gatsby-plugin-sharp": "^2.2.13",
     "gatsby-source-contentful": "^2.1.29",
     "gatsby-source-filesystem": "^2.1.11",
     "gatsby-transformer-remark": "^2.6.19",
     "gatsby-transformer-sharp": "^2.2.7",
+    "leaflet": "^1.5.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-leaflet": "^2.4.0"
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",

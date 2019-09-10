@@ -1,13 +1,14 @@
 import React from "react"
 import Layout from "c/layout/Layout"
-import GoogleMaps from "c/GoogleMaps"
+// import GoogleMaps from "c/GoogleMaps"
+import Leaflet from "c/Leaflet"
 import "./Map.css"
 
 export default ({ data }) => {
   // const [state, setState] = useState(false)
   return (
     <Layout type="page" className="map">
-      <GoogleMaps />
+      <Leaflet className="map-leaflet" center={[-5, -83]} zoom={4} />
       <ul className="list">
         {data.nodes.map((item, i) => (
           <li key={i}>

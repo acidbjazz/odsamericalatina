@@ -30,8 +30,8 @@ export default ({ data }) => {
                         <div className="resource-abstract">
                           {item.sumilla.sumilla}
                         </div>
-                        <a className="resource-link" href={item.url}>
-                          Link
+                        <a className="go" href={item.url}>
+                          Link text
                         </a>
                       </div>
                     ))
@@ -39,7 +39,7 @@ export default ({ data }) => {
               </div>
 
               <div>
-                <h3>Instituciones</h3>
+                <h3>Institucionalidad</h3>
                 {groupByTematica(item.nodes)["Instituciones"]
                   ? groupByTematica(item.nodes)["Instituciones"].map(
                       (item, i) => (
@@ -49,8 +49,8 @@ export default ({ data }) => {
                           <div className="resource-abstract">
                             {item.sumilla.sumilla}
                           </div>
-                          <a className="resource-link" href={item.url}>
-                            Link
+                          <a className="go" href={item.url}>
+                            Link text
                           </a>
                         </div>
                       )
@@ -68,8 +68,8 @@ export default ({ data }) => {
                         <div className="resource-abstract">
                           {item.sumilla.sumilla}
                         </div>
-                        <a className="resource-link" href={item.url}>
-                          Link
+                        <a className="go" href={item.url}>
+                          Link text
                         </a>
                       </div>
                     ))
