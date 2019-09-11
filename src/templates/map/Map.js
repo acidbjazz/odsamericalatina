@@ -8,6 +8,7 @@ export default ({ data }) => {
   const showCountryData = data => {
     setCountryData(data)
   }
+  console.log("data:", data)
   console.log("countryData:", countryData)
 
   return (
@@ -22,20 +23,20 @@ export default ({ data }) => {
         minZoom={3}
         maxZoom={5}
       />
-      {countryData ? (
-        <div className="map-data">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: countryData,
-            }}
-          />
-        </div>
-      ) : (
+      {/* {countryData ? ( */}
+      <div className="map-data">
+        <div
+          dangerouslySetInnerHTML={{
+            __html: countryData,
+          }}
+        />
+      </div>
+      {/* ) : (
         <div className="map-data wait">
           Texto inicial: indicaciones de uso y/o de que va la sección, que datos
           se pueden obtener aquí
         </div>
-      )}
+      )} */}
     </Layout>
   )
 }

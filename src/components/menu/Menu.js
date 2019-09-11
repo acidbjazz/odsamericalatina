@@ -29,9 +29,9 @@ export default () => {
         <Link to="/proyecto/" className="nav-item" activeClassName="active">
           El Proyecto
         </Link>
-        <Link to="/mapa/" className="nav-item" activeClassName="active">
+        {/* <Link to="/mapa/" className="nav-item" activeClassName="active">
           Mapa
-        </Link>
+        </Link> */}
         <Link
           to="/noticias/"
           className="nav-item"
