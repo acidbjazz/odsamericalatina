@@ -10,7 +10,7 @@ export default () => {
       <div className="header-content">
         <Responsive
           desktop={<Brand type="logo" filetype="svg" isLink={true} />}
-          mobile={<Brand type="iso" filetype="svg" isLink={true} />}
+          mobile={<Brand type="logo" filetype="html" isLink={true} />}
         ></Responsive>
         <Menu />
       </div>

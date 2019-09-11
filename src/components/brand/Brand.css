@@ -1,18 +1,28 @@
 .brand {
   text-decoration: none;
+}
+
+.logo-svg {
   width: 10rem;
 }
 
-.logo {
+.logo-html {
 }
 
-.iso {
+.colors-bar {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.logo-html-text {
+  color: black;
+  font-family: var(--font-sans-1);
+  font-size: var(--font-size--h3);
+  background: var(--color-gray--light);
+  padding: 0 0.2rem;
 }
 
 /* responsive */
 
 @media (max-width: 1200px) {
-  /* .logo {
-    display: none;
-  } */
 }

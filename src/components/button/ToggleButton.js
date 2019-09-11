@@ -8,7 +8,7 @@ export default ({ fx, on, off }) => {
     fx(state)
   }
   return (
-    <button className="ToggleButton" onClick={toggle}>
+    <button className="toggle-button" onClick={toggle}>
       {state ? on : off}
     </button>
   )

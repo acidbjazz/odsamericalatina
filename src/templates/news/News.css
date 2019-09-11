@@ -7,14 +7,29 @@
 .news-item {
   text-decoration: none;
   color: var(--color-text);
+  cursor: default;
+  display: block;
+}
+
+.news-item:hover .news-item-cover-img {
+  transform: scale(1.05);
 }
 
 .news-item-cover {
+  display: block;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.news-item-cover-img {
+  transition: all var(--t-l) var(--easeOutExpo);
   width: 100%;
 }
 
 .news-item-title {
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 .news-item-date {
@@ -25,4 +40,25 @@
 .news-item-excerpt {
   margin-bottom: 1rem;
   font-size: var(--font-size--details);
+}
+
+.news .go {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* responsive */
+
+@media (max-width: 1200px) {
+  .news-list {
+    display: block;
+  }
+
+  .news-item {
+    margin-bottom: 2rem;
+  }
+
+  .news-item:last-child {
+    margin-bottom: 0;
+  }
 }

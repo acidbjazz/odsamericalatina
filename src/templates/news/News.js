@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Layout from "c/layout/Layout"
+import Layout from "t/layout/Layout"
 import "./News.css"
 
 export default ({ data }) => {
@@ -11,11 +11,13 @@ export default ({ data }) => {
       <div className="news-list">
         {dataList.map((item, i) => (
           <Link key={i} className="news-item" to={`/noticias/${item.slug}`}>
-            <img
-              className="news-item-cover"
-              src={item.portada.file.url}
-              alt="x"
-            />
+            <picture className="news-item-cover">
+              <img
+                className="news-item-cover-img"
+                src={item.portada.file.url}
+                alt="x"
+              />
+            </picture>
             <h3 className="news-item-title">{item.titulo}</h3>
             <div className="news-item-date">{item.fecha}</div>
             <div className="news-item-excerpt">

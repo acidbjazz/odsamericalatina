@@ -7,7 +7,6 @@
 }
 
 .project .odss {
-  background: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
@@ -25,4 +24,20 @@
 .ods-description {
   margin-bottom: 1rem;
   font-size: var(--font-size--details);
+}
+
+/* responsive */
+
+@media (max-width: 1200px) {
+  .project .odss {
+    display: block;
+  }
+
+  .project .ods {
+    margin-bottom: 2rem;
+  }
+
+  .project .ods:last-child {
+    margin-bottom: 0;
+  }
 }

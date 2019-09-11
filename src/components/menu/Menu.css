@@ -15,7 +15,6 @@
 
 .nav-item.active {
   color: var(--color-skyblue);
-  background: white;
 }
 
 .nav-item:first-child {
@@ -27,7 +26,33 @@
 }
 
 .nav-item:hover {
-  background: white;
+  color: var(--color-skyblue);
+}
+
+/* responsive */
+
+@media (max-width: 1200px) {
+  .is-open .nav-pages {
+    display: block;
+  }
+
+  .nav-pages {
+    background: var(--color-white--alpha);
+    position: fixed;
+    top: 94.33px;
+    /* top: 0; */
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+  }
+
+  .nav-item {
+    display: block;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-align: center;
+  }
 }
 
 /* .home .menu-panel,

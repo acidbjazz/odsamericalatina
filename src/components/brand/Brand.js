@@ -1,7 +1,10 @@
 /**
- * type: "logo", "iso"
- * filetype: "svg", "img", "text"
- * isLink: true, false
+ * @class Brand
+ * This class contains the multiples assets for logo
+ *
+ * @option type: String = undefined ("logo", "iso")
+ * @option filetype: String = undefined ("svg", "img", "html")
+ * @option isLink: Boolean = undefined
  */
 
 import React from "react"
@@ -11,26 +14,30 @@ import IsoSVG from "i/logo.svg"
 import LogoIMG from "i/logo.png"
 import IsoIMG from "i/logo.png"
 import "./Brand.css"
+import ColorsBar from "i/colors-bar.svg"
 
 export default ({ type, filetype, isLink }) => {
   const brand = {
     svg:
       type === "logo" ? (
-        <LogoSVG className="logo" />
+        <LogoSVG className="logo-svg" />
       ) : (
-        <IsoSVG className="iso" />
+        <IsoSVG className="iso-svg" />
       ),
     img:
       type === "logo" ? (
-        <img className="logo" src={LogoIMG} alt="logo" />
+        <img className="logo-img" src={LogoIMG} alt="logo" />
       ) : (
-        <img className="iso" src={IsoIMG} alt="iso" />
+        <img className="iso-img" src={IsoIMG} alt="iso" />
       ),
-    text:
+    html:
       type === "logo" ? (
-        <div className="logo">LOGO</div>
+        <div className="logo-html">
+          <ColorsBar className="colors-bar" />
+          <div className="logo-html-text">ODS AMÉRICA LATINA</div>
+        </div>
       ) : (
-        <div className="iso">ISO</div>
+        <div className="iso-text">ISO</div>
       ),
   }[filetype]
   return isLink ? (

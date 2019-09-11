@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "c/layout/Layout"
+import Layout from "t/layout/Layout"
 import "./Project.css"
 
 export default ({ data }) => {

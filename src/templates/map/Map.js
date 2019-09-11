@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Layout from "c/layout/Layout"
+import Layout from "t/layout/Layout"
 import Leaflet from "c/Leaflet"
 import "./Map.css"
 
@@ -8,6 +8,8 @@ export default ({ data }) => {
   const showCountryData = data => {
     setCountryData(data)
   }
+  console.log("countryData:", countryData)
+
   return (
     <Layout type="app" className="map">
       <Leaflet

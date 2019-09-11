@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "c/layout/Layout"
+import Layout from "t/layout/Layout"
 import "./Resources.css"
 
 export default ({ data }) => {
@@ -22,7 +22,7 @@ export default ({ data }) => {
                 <h3>Economía</h3>
                 {groupByTematica(item.nodes)["Economía"]
                   ? groupByTematica(item.nodes)["Economía"].map((item, i) => (
-                      <div className="resource" key={i}>
+                      <div className="resource card" key={i}>
                         <h4 className="resource-title">{item.titulo}</h4>
                         <div className="resource-format">{item.formato}</div>
                         <div className="resource-abstract">
@@ -40,7 +40,7 @@ export default ({ data }) => {
                 {groupByTematica(item.nodes)["Instituciones"]
                   ? groupByTematica(item.nodes)["Instituciones"].map(
                       (item, i) => (
-                        <div className="resource" key={i}>
+                        <div className="resource card" key={i}>
                           <h4 className="resource-title">{item.titulo}</h4>
                           <div className="resource-format">{item.formato}</div>
                           <div className="resource-abstract">
@@ -58,7 +58,7 @@ export default ({ data }) => {
                 <h3>Territorio</h3>
                 {groupByTematica(item.nodes)["Territorio"]
                   ? groupByTematica(item.nodes)["Territorio"].map((item, i) => (
-                      <div className="resource" key={i}>
+                      <div className="resource card" key={i}>
                         <h4 className="resource-title">{item.titulo}</h4>
                         <div className="resource-format">{item.formato}</div>
                         <div className="resource-abstract">

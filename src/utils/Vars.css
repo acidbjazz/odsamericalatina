@@ -1,27 +1,30 @@
 /* @import url("https://fonts.googleapis.com/css?family=Open+Sans"); */
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald:500&display=swap");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons&display=block");
 
 :root {
   /* COLORS */
 
-  --color-gray: #ededed;
+  --color-gray--light: #ededed;
+  --color-gray: #cdcdcd;
+  --color-gray--dark: #4d4d4d;
   --color-skyblue: #009dda;
 
-  --color-white--alpha: rgba(255, 255, 255, 0.5);
+  --color-white--alpha: rgba(255, 255, 255, 0.9);
   --color-black--alpha: rgba(0, 0, 0, 0.3);
   --color-red--alpha: rgba(255, 0, 0, 0.25);
   --color-green--alpha: rgba(0, 255, 0, 0.25);
   --color-blue--alpha: rgba(0, 0, 255, 0.25);
   --color-yellow--alpha: rgba(255, 255, 0, 0.25);
 
-  --color-text: #4d4d4d;
+  --color-text: var(--color-gray--dark);
   --color-background: white;
 
   /* MEASURES */
 
   --page-width: 1200px;
+  --hero-height: 90vh;
   /* --page-columns: 4; */
   /* --column-width: 100% / var(--page-columns); */
   /* --border-radius: 4px; */
@@ -35,7 +38,7 @@
 
   --font-family: var(--font-sans-2);
 
-  --font-size--menu: 18px;
+  --font-size--menu: 20px;
   --font-size--h1: 30px;
   --font-size--h2: 24px;
   --font-size--h3: 20px;
@@ -51,9 +54,13 @@
 
   /* Z-INDEX */
 
-  --z--header: 1;
-  --z--menu: 2;
-  --z--modal: 3;
+  --z--hero: 1;
+  --z--map: 2;
+  --z--map-leaflet: 3;
+  --z--map-data: 4;
+  --z--header: 5;
+  --z--menu: 6;
+  --z--modal: 7;
 
   /* BREAKPOINTS */
 
@@ -88,8 +95,16 @@
 
 /* responsive */
 
-@media (max-width: 1800px) {
+@media (max-width: 1200px) {
   :root {
-    /* --page-width: 800px; */
+    --font-size--menu: 16px;
+    --font-size--h1: 24px;
+    --font-size--h2: 20px;
+    --font-size--h3: 16px;
+    --font-size--paragraph: 14px;
+    --font-size--details: 12px;
+    --font-size--tiny: 10px;
+
+    --hero-height: 50vh;
   }
 }

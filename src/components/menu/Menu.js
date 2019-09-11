@@ -1,20 +1,22 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import Responsive from "c/Responsive"
 import ToggleButton from "c/button/ToggleButton"
 import "./Menu.css"
 
 export default () => {
-  const openMenu = state => {
-    state ? console.log("cerrar") : console.log("abrir")
+  const [isOpen, setIsOpen] = useState(false)
+
+  const open = state => {
+    setIsOpen(!state)
   }
   return (
-    <div className="menu">
+    <div className={isOpen ? "menu is-open" : "menu"}>
       <Responsive
         desktop={null}
         mobile={
           <ToggleButton
-            fx={openMenu}
+            fx={open}
             on={<i className="material-icons">close</i>}
             off={<i className="material-icons">menu</i>}
           />

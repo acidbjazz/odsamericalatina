@@ -9,13 +9,11 @@
 .resources-topics {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .resource {
-  margin-bottom: 1rem;
-  border: 1px solid var(--color-gray);
-  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .resource:last-child {
@@ -36,9 +34,34 @@
   font-size: var(--font-size--details);
 }
 
-.resource-link {
-  text-decoration: none;
-  color: black;
-  background: var(--color-gray);
-  padding: 0.2rem 0.4rem;
+/* responsive */
+
+@media (max-width: 1200px) {
+  .resources-topics {
+    display: block;
+  }
+
+  .resources-topics > div {
+    margin-bottom: 1rem;
+  }
+
+  .resources-topics > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .resource {
+    margin-bottom: -1px;
+  }
+
+  .resource:last-child {
+    margin-bottom: 0;
+  }
+
+  /* .project .ods {
+    margin-bottom: 2rem;
+  }
+
+  .project .ods:last-child {
+    margin-bottom: 0;
+  } */
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Layout from "c/layout/Layout"
+import Layout from "t/layout/Layout"
 import "./Home.css"
 import Modal from "c/modal/Modal"
 
@@ -30,7 +30,7 @@ export default ({ data }) => {
             onClick={() => showVideo(data.videoPrincipal.file.url)}
           >
             <i className="material-icons">play_arrow</i>
-            <span>Sobre los objetivos de desarrollo sostenible (ODS)</span>
+            <span>Conoce nuestro enfoque</span>
           </button>
         </div>
       </div>
@@ -68,7 +68,6 @@ export default ({ data }) => {
                       className="ods-video-cover-img"
                       src={item.portada.file.url}
                       alt="cover"
-                      width="360"
                     />
                     <button className="ods-video-cover-play">
                       <i className="material-icons">play_arrow</i>

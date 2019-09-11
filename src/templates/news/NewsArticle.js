@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "c/layout/Layout"
+import Layout from "t/layout/Layout"
 import "./NewsArticle.css"
 
 export default ({ data }) => {

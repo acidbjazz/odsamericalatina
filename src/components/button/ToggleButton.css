@@ -1,0 +1,7 @@
+.toggle-button {
+  color: black;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

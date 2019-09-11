@@ -1,6 +1,6 @@
 import React from "react"
-import { Map, TileLayer, Marker, GeoJSON } from "react-leaflet"
-import americaGeoJSON from "t/map/map.geo.json"
+import { Map, Marker, GeoJSON } from "react-leaflet"
+import Countries from "t/map/countries.geo.json"
 
 export default ({
   className,
@@ -23,7 +23,7 @@ export default ({
       maxZoom={maxZoom}
     >
       <GeoJSON
-        data={americaGeoJSON}
+        data={Countries}
         style={() => ({
           color: "#4d4d4d",
           weight: 1,
@@ -32,6 +32,7 @@ export default ({
           dashArray: 3,
           fillOpacity: 0.5,
         })}
+        interactive={false}
       />
 
       {data.map((item, i) => (
