@@ -13,30 +13,33 @@ export default ({ data }) => {
 
   return (
     <Layout type="app" className="map">
-      <Leaflet
-        className="map-leaflet"
-        data={data.nodes}
-        showCountryData={showCountryData}
-        center={[5, -50]}
-        zoom={4}
-        zoomControl={false}
-        minZoom={3}
-        maxZoom={5}
-      />
-      {/* {countryData ? ( */}
-      <div className="map-data">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: countryData,
-          }}
+      <div className="map-leaflet">
+        <Leaflet
+          className="xyz"
+          data={data.nodes}
+          showCountryData={showCountryData}
+          center={[5, -50]}
+          zoom={4}
+          zoomControl={false}
+          minZoom={3}
+          maxZoom={5}
         />
       </div>
-      {/* ) : (
-        <div className="map-data wait">
-          Texto inicial: indicaciones de uso y/o de que va la sección, que datos
-          se pueden obtener aquí
-        </div>
-      )} */}
+      <div className="map-data">
+        {countryData ? (
+          <div
+            dangerouslySetInnerHTML={{
+              __html: countryData,
+            }}
+          />
+        ) : (
+          <div className="wait">
+            Texto inicial: indicaciones de uso y/o de que va la sección, que
+            datos se pueden obtener aquí
+          </div>
+        )}
+      </div>
+      )}
     </Layout>
   )
 }

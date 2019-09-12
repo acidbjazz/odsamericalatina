@@ -21,6 +21,13 @@
   padding: 0;
 }
 
+.xyz {
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: var(--z--map-leaflet);
+}
+
 .map-leaflet {
   width: 100%;
   height: 100vh;
@@ -28,7 +35,7 @@
   z-index: var(--z--map-leaflet);
 }
 
-.map-leaflet.leaflet-container {
+.xyzt.leaflet-container {
   background: white;
 }
 
@@ -47,7 +54,7 @@
 }
 
 .wait {
-  height: auto;
+  background: var(--color-gray--light);
 }
 
 .map-data p:last-child {
