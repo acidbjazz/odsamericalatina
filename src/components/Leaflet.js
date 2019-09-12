@@ -12,7 +12,6 @@ export default ({
   minZoom,
   maxZoom,
 }) => {
-  console.log("typeof window:", typeof window)
   return typeof window !== "undefined" ? (
     <Map
       className={className}

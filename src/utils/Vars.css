@@ -54,13 +54,13 @@
 
   /* Z-INDEX */
 
-  --z--hero: 1;
-  --z--map: 2;
-  --z--map-leaflet: 3;
-  --z--map-data: 4;
-  --z--header: 5;
-  --z--menu: 6;
-  --z--modal: 7;
+  --z--hero: 10;
+  --z--map: 20;
+  --z--map-leaflet: 21;
+  --z--map-data: 22;
+  --z--header: 30;
+  --z--menu: 40;
+  --z--modal: 50;
 
   /* BREAKPOINTS */
 
