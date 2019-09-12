@@ -7,8 +7,8 @@ import "./Map.css"
 export default ({ data }) => {
   const [countryData, setCountryData] = useState(null)
 
-  const showCountryData = data => {
-    setCountryData(data)
+  const showCountryData = (country, text) => {
+    setCountryData({ country: country, text: text })
   }
 
   const close = () => {
@@ -46,7 +46,7 @@ export default ({ data }) => {
       <div className="map-data">
         {countryData ? (
           <>
-            <h1 className="map-data-title">País</h1>
+            <h1 className="map-data-title">{countryData.country}</h1>
             <button className="map-data-close" onClick={() => close()}>
               <i className="material-icons">close</i>
             </button>
@@ -54,14 +54,14 @@ export default ({ data }) => {
             <div
               className="map-data-html"
               dangerouslySetInnerHTML={{
-                __html: countryData,
+                __html: countryData.text,
               }}
             />
           </>
         ) : (
           <div className="map-data-welcome">
-            Texto inicial: indicaciones de uso y/o de que va la sección, que
-            datos se pueden obtener aquí
+            Indicadores económicos y sociales relativos al sector extractivo a
+            nivel país
           </div>
         )}
       </div>

@@ -23,7 +23,7 @@ export default ({ data }) => {
             <div className="news-item-excerpt">
               {item.texto.childMarkdownRemark.excerpt}
             </div>
-            <div className="go">Link text</div>
+            <div className="go">Seguir Leyendo</div>
           </Link>
         ))}
       </div>

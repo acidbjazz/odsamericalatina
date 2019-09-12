@@ -31,128 +31,26 @@
 
 /* responsive */
 
-@media (max-width: 1200px) {
-  .is-open .nav-pages {
+@media (max-width: 900px) {
+  .menu-is-open .nav-pages {
     display: block;
   }
 
   .nav-pages {
-    background: var(--color-white--alpha);
+    background: white;
     position: fixed;
     top: 94.33px;
     right: 0;
     left: 0;
     bottom: 0;
     display: none;
+    padding-top: 1rem;
   }
 
   .nav-item {
     display: block;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     margin: 0;
     text-align: center;
   }
 }
-
-/* .home .menu-panel,
-.categoria .menu-panel {
-  background: var(--color-gray);
-}
-
-.bio .menu-panel {
-  background: var(--color-skyblue);
-}
-
-.opinion .menu-panel {
-  background: var(--color-red);
-}
-
-.libros .menu-panel {
-  background: var(--color-blue);
-}
-
-.articulos-academicos .menu-panel {
-  background: var(--color-yellow);
-}
-
-.teaching .menu-panel {
-  background: var(--color-green);
-}
-
-.actividades .menu-panel {
-  background: var(--color-purple);
-}
-
-.is-open .menu-panel {
-  display: block;
-}
-
-.is-open .menu-open {
-  display: none;
-}
-
-.is-open .menu-close {
-  display: block;
-}
-
-.menu-buttons {
-  width: 30px;
-  height: 30px;
-  margin: 5rem auto;
-}
-
-.menu-open {
-  display: block;
-  background: none;
-  color: white;
-  cursor: pointer;
-  margin: 0 auto;
-  height: 30px;
-}
-
-.menu-close {
-  display: none;
-  background: none;
-  color: white;
-  cursor: pointer;
-  margin: 0 auto;
-  height: 30px;
-}
-
-.menu-panel {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 5rem;
-  width: calc(100% - 5rem);
-  height: 100vh;
-  padding: 5rem;
-}
-
-.nav {
-  font-family: var(--font-sans-1);
-  display: inline-block;
-}
-
-.nav-item {
-  display: block;
-  color: white;
-  text-decoration: none;
-  width: auto;
-}
-
-.nav-item:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.nav-item:hover {
-  text-decoration: underline;
-}
-
-.nav-item.active {
-  font-weight: bold;
-}
-
-.nav-item.active:hover {
-  text-decoration: none;
-} */

@@ -47,7 +47,7 @@ export default ({ data }) => {
                             {item.sumilla.sumilla}
                           </div>
                           <a className="go" href={item.url}>
-                            Link text
+                            Ir al recurso
                           </a>
                         </div>
                       )

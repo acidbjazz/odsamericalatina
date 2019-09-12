@@ -23,7 +23,7 @@ export default ({ data }) => {
               {item.descripcion.descripcion}
             </div>
             <a className="go" href={item.url}>
-              Link text
+              Leer más
             </a>
             {/* {item.videos ? <div>¡hay videos!</div> : null} */}
           </div>

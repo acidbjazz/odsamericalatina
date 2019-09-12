@@ -4,19 +4,14 @@ import Responsive from "c/Responsive"
 import ToggleButton from "c/button/ToggleButton"
 import "./Menu.css"
 
-export default () => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const open = state => {
-    setIsOpen(!state)
-  }
+export default ({ openMenu }) => {
   return (
-    <div className={isOpen ? "menu is-open" : "menu"}>
+    <div className="menu">
       <Responsive
         desktop={null}
         mobile={
           <ToggleButton
-            fx={open}
+            fx={openMenu}
             on={<i className="material-icons">close</i>}
             off={<i className="material-icons">menu</i>}
           />

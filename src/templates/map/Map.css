@@ -73,7 +73,7 @@
 
 /* responsive */
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .map-data {
     width: calc(100% - 2rem);
     max-height: calc(100vh - 94.33px - 1rem);

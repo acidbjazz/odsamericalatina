@@ -154,13 +154,14 @@
 
 /* responsive */
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .home .nav-item {
     color: black;
   }
 
   .home .nav-item.active {
     color: var(--color-skyblue);
+    background: none;
   }
 
   .home .nav-item:hover {

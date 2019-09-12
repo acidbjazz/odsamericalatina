@@ -39,7 +39,9 @@ export default ({
         <Marker
           key={i}
           position={[item.coordenadas.lat, item.coordenadas.lon]}
-          onClick={() => showCountryData(item.texto.childMarkdownRemark.html)}
+          onClick={() =>
+            showCountryData(item.pais, item.texto.childMarkdownRemark.html)
+          }
         />
       ))}
     </Map>

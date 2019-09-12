@@ -10,7 +10,7 @@
 
 /* responsive */
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .main-content {
     padding: 2rem;
   }

@@ -5,7 +5,7 @@ export default ({ fx, on, off }) => {
   const [state, setState] = useState(false)
   const toggle = () => {
     setState(!state)
-    fx(state)
+    fx(!state)
   }
   return (
     <button className="toggle-button" onClick={toggle}>

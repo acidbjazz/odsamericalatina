@@ -53,6 +53,10 @@ p {
   margin-bottom: 1rem;
 }
 
+p > a {
+  color: var(--color-text);
+}
+
 ol,
 ul {
   margin-bottom: 1rem;

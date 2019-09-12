@@ -15,7 +15,12 @@
 
 /* responsive */
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
+  .menu-is-open.header {
+    background: white;
+    position: fixed !important;
+  }
+
   .header-content {
     padding: 2rem;
   }

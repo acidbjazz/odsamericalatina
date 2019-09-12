@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-const maxPhone = `screen and (max-width: 1200px)`
+const maxPhone = `screen and (max-width: 900px)`
 
 export default ({ mobile, desktop }) => {
   if (typeof window !== `undefined`) {
