@@ -23,7 +23,7 @@ export default ({ title = null, cover = null }) => {
   const _url = data.url
   const _description = data.description
   const _title = title ? `${title} | ${_site}` : _site
-  const _cover = cover ? cover : `${_url} ${Cover}`
+  const _cover = cover ? cover : `${_url}${Cover}`
   return (
     <Helmet className="Seo">
       <meta property="og:title" content={_title} />
