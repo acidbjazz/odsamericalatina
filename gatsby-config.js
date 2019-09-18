@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     site: `ODS América Latina`,
     description: `ODS América Latina es un centro de recursos, análisis e información acerca de la relación entre los impactos de las industrias extractivas y los Objetivos de Desarrollo Sostenible`,
+    url: `http://odsamericalatina.redextractivas.org/`,
     author: `@acidbjazz`,
   },
   plugins: [

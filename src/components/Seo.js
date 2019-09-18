@@ -11,6 +11,7 @@ export default ({ title = null, cover = null }) => {
           siteMetadata {
             site
             description
+            url
             author
           }
         }
@@ -22,7 +23,7 @@ export default ({ title = null, cover = null }) => {
   const _url = data.url
   const _description = data.description
   const _title = title ? `${title} | ${_site}` : _site
-  const _cover = cover ? cover : Cover
+  const _cover = cover ? cover : url + Cover
   return (
     <Helmet className="Seo">
       <meta property="og:title" content={_title} />
@@ -33,6 +34,7 @@ export default ({ title = null, cover = null }) => {
       <meta property="og:locale" content="es_LA" />
       <meta property="og:image" content={_cover} />
       <title>{_title}</title>
+      <meta name="description" content={_description} />
     </Helmet>
   )
 }
