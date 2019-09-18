@@ -6,7 +6,7 @@ import "./News.css"
 export default ({ data }) => {
   const dataList = data.allContentfulNoticias.nodes
   return (
-    <Layout type="page" className="news">
+    <Layout type="page" className="news" title="Noticias">
       <h1>NOTICIAS</h1>
       <div className="news-list">
         {dataList.map((item, i) => (

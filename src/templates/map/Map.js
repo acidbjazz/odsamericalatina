@@ -16,7 +16,7 @@ export default ({ data }) => {
   }
 
   return (
-    <Layout type="app" className="map">
+    <Layout type="app" className="map" title="Mapa">
       <div className="map-leaflet">
         <Responsive
           desktop={

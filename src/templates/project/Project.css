@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .ods-icon {
@@ -24,6 +25,14 @@
 .ods-description {
   margin-bottom: 1rem;
   font-size: var(--font-size--details);
+}
+
+.credits {
+  font-size: var(--font-size--tiny);
+}
+
+.credits p:last-child {
+  margin-bottom: 0;
 }
 
 /* responsive */

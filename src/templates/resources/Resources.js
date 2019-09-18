@@ -11,7 +11,7 @@ export default ({ data }) => {
     }, {})
   const groupByTematica = groupBy("tematica")
   return (
-    <Layout type="page" className="resources">
+    <Layout type="page" className="resources" title="Recursos">
       <h1>RECURSOS</h1>
       <div className="resources-list">
         {data.group.map((item, i) => (
@@ -29,7 +29,7 @@ export default ({ data }) => {
                           {item.sumilla.sumilla}
                         </div>
                         <a className="go" href={item.url}>
-                          Link text
+                          Ir al recurso
                         </a>
                       </div>
                     ))
@@ -65,7 +65,7 @@ export default ({ data }) => {
                           {item.sumilla.sumilla}
                         </div>
                         <a className="go" href={item.url}>
-                          Link text
+                          Ir al recurso
                         </a>
                       </div>
                     ))

@@ -2,8 +2,9 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `ODS América Latina`,
-    description: `ODS América Latina`,
+    site: `ODS América Latina`,
+    description: `ODS América Latina es un centro de recursos, análisis e información acerca de la relación entre los impactos de las industrias extractivas y los Objetivos de Desarrollo Sostenible`,
+    cover: `src/images/cover.img`,
     author: `@acidbjazz`,
   },
   plugins: [
@@ -62,6 +63,12 @@ module.exports = {
       resolve: `gatsby-plugin-react-leaflet`,
       options: {
         linkStyles: true, // (default: true) Enable/disable loading stylesheets via CDN
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-15292675-17",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

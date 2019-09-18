@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Layout from "t/layout/Layout"
-import "./Home.css"
 import Modal from "c/modal/Modal"
+import "./Home.css"
 
 export default ({ data }) => {
   const [showModal, setShowModal] = useState(null)

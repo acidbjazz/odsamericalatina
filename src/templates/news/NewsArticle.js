@@ -6,7 +6,12 @@ import "./NewsArticle.css"
 export default ({ data }) => {
   const dataList = data.contentfulNoticias
   return (
-    <Layout type="page" className="news-article">
+    <Layout
+      type="page"
+      className="news-article"
+      title={dataList.titulo}
+      cover={dataList.portada.file.url}
+    >
       <h1>NOTICIAS</h1>
       <h2 className="news-article-title">{dataList.titulo}</h2>
       <div className="news-article-date">{dataList.fecha}</div>
