@@ -14,11 +14,6 @@ export const ProjectQuery = graphql`
           html
         }
       }
-      creditos {
-        childMarkdownRemark {
-          html
-        }
-      }
       odss {
         contentfulid
         nombre
@@ -38,3 +33,9 @@ export const ProjectQuery = graphql`
     }
   }
 `
+
+// creditos {
+//   childMarkdownRemark {
+//     html
+//   }
+// }
