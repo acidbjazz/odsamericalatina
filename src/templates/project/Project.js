@@ -3,7 +3,6 @@ import Layout from "t/layout/Layout"
 import "./Project.css"
 
 export default ({ data }) => {
-  console.log(data.creditos)
   return (
     <Layout type="page" className="project" title="El Proyecto">
       <h1>EL PROYECTO</h1>
@@ -29,12 +28,12 @@ export default ({ data }) => {
           </div>
         ))}
       </div>
-      {/* <div
+      <div
         className="credits"
         dangerouslySetInnerHTML={{
           __html: data.creditos.childMarkdownRemark.html,
         }}
-      /> */}
+      />
     </Layout>
   )
 }

@@ -30,12 +30,11 @@ export const ProjectQuery = graphql`
           titulo
         }
       }
+      creditos {
+        childMarkdownRemark {
+          html
+        }
+      }
     }
   }
 `
-
-// creditos {
-//   childMarkdownRemark {
-//     html
-//   }
-// }
