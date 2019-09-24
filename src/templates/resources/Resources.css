@@ -16,8 +16,17 @@
   margin-bottom: 2rem;
 }
 
+.featured {
+  background: var(--color-gray--light);
+  color: black;
+}
+
 .resource:last-child {
   margin-bottom: 0;
+}
+
+.featured .resource-title {
+  color: var(--color-skyblue);
 }
 
 .resource-title {

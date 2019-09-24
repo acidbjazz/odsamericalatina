@@ -13,12 +13,13 @@ export const ResourcesQuery = graphql`
         fieldValue
         nodes {
           tematica
-          titulo
           formato
-          url
+          titulo
           sumilla {
             sumilla
           }
+          url
+          destacado
         }
       }
     }
