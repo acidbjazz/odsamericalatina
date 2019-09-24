@@ -29,12 +29,12 @@ export default ({ data }) => {
           </div>
         ))}
       </div>
-      <div
+      {/* <div
         className="credits"
         dangerouslySetInnerHTML={{
           __html: data.creditos.childMarkdownRemark.html,
         }}
-      />
+      /> */}
     </Layout>
   )
 }
