@@ -3,6 +3,7 @@ import Layout from "t/layout/Layout"
 import "./Project.css"
 
 export default ({ data }) => {
+  console.log(data.creditos)
   return (
     <Layout type="page" className="project" title="El Proyecto">
       <h1>EL PROYECTO</h1>
