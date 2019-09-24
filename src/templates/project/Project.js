@@ -25,16 +25,15 @@ export default ({ data }) => {
             <a className="go" href={item.url}>
               Leer más
             </a>
-            {/* {item.videos ? <div>¡hay videos!</div> : null} */}
           </div>
         ))}
       </div>
-      {/* <div
+      <div
         className="credits"
         dangerouslySetInnerHTML={{
           __html: data.creditos.childMarkdownRemark.html,
         }}
-      /> */}
+      />
     </Layout>
   )
 }
