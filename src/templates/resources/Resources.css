@@ -17,8 +17,9 @@
 }
 
 .featured {
-  background: var(--color-gray--light);
-  color: black;
+  background: var(--color-skyblue);
+  color: white;
+  /* border: var(--color-skyblue) 1px dashed; */
 }
 
 .resource:last-child {
@@ -26,7 +27,11 @@
 }
 
 .featured .resource-title {
-  color: var(--color-skyblue);
+  color: white;
+}
+
+.featured .go {
+  color: white;
 }
 
 .resource-title {
@@ -65,12 +70,4 @@
   .resource:last-child {
     margin-bottom: 0;
   }
-
-  /* .project .ods {
-    margin-bottom: 2rem;
-  }
-
-  .project .ods:last-child {
-    margin-bottom: 0;
-  } */
 }

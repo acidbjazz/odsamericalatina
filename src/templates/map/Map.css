@@ -72,6 +72,10 @@
   cursor: pointer;
 }
 
+.map-data table {
+  table-layout: fixed;
+}
+
 /* responsive */
 
 @media (max-width: 900px) {
