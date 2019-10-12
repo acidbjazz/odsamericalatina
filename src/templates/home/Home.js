@@ -6,8 +6,8 @@ import "./Home.css"
 export default ({ data }) => {
   const [showModal, setShowModal] = useState(null)
 
-  const showVideo = video => {
-    setShowModal(video)
+  const showVideo = (videoFile, videoTitle) => {
+    setShowModal({ videoFile, videoTitle })
   }
 
   const closeVideo = () => {
@@ -60,7 +60,7 @@ export default ({ data }) => {
               {item.videos.map((item, i) => (
                 <div
                   className="ods-video"
-                  onClick={() => showVideo(item.video.file.url)}
+                  onClick={() => showVideo(item.video.file.url, item.titulo)}
                   key={i}
                 >
                   <picture className="ods-video-cover">

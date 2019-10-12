@@ -5,12 +5,22 @@
   z-index: var(--z--modal);
   top: 0;
   left: 0;
+  background: black;
 }
 
 .modal-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.modal-title {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem;
 }
 
 .modal-close {
@@ -31,4 +41,18 @@
 
 .modal-close i {
   font-size: 1.5rem;
+}
+
+/* responsive */
+
+@media (max-width: 900px) {
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-video {
+    object-fit: fill;
+    height: auto;
+  }
 }

@@ -9,8 +9,11 @@ export default ({ video, closeVideo }) => {
   return (
     <div className="modal">
       <video className="modal-video" preload="auto" autoPlay controls>
-        <source src={video} type="video/mp4" />
+        <source src={video.videoFile} type="video/mp4" />
       </video>
+      {video.videoTitle && (
+        <div className="modal-title">{video.videoTitle}</div>
+      )}
       <button className="modal-close" onClick={() => close()}>
         <i className="material-icons">close</i>
       </button>
