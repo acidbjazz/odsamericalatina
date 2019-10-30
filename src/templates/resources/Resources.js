@@ -34,9 +34,7 @@ export default ({ data }) => {
                             key={i}
                           >
                             <h4 className="resource-title">{item.titulo}</h4>
-                            <div className="resource-format">
-                              {item.formato}
-                            </div>
+                            <em className="resource-format">{item.formato}</em>
                             <div className="resource-abstract">
                               {item.sumilla.sumilla}
                             </div>
